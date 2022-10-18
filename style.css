@@ -34,7 +34,6 @@ body {
 
 .container {
     max-width: 700px;
-    align: ;
     margin: 0 auto;
     margin: 0 auto;
     padding: 10px;
@@ -57,21 +56,16 @@ h3.byline {
     padding-bottom: 0px;
 }
 
-h4.dateline {
-    text-align: left;
-}
-
 .container-photo {
-    margin-top: 0 auto;
+    margin-top:  0 auto;
     margin-bottom: 0 auto; 
     display: block;
-    padding: 0 auto;
+    padding: 0;
 }
 
 img.icon {
     display: block;
-    width: 100%;
-    
+    width: 100%
 }
 
 .flex{
@@ -80,7 +74,7 @@ img.icon {
 }
 
 figcaption {
-	color: gray;
+    color: gray;
     font-size: 14px;
     max-width: 500px;
 
@@ -93,9 +87,7 @@ div.intro_graph {
 }
 
 .icon-text {
-padding: 30px;
-text-align: justify-all;
-max-height: 100px;
+text-align: justify;
 }
 
 
@@ -104,14 +96,34 @@ max-height: 100px;
 div.sources {
     max-width: 1300px;
     margin: 0 auto;
+
 }
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
     
-    /*ADD HERE*/
+     .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+.flex > div {
+    /*needs to be less than equal to number of 100/ number of icons*/
+    flex-basis: 22%;
+}
 
+/*setting a height for our h3 elements makes them all the same size boxes*/
+div.flex > div > h3{
+    height: 75px;
+    margin: 0;
+    text-align: center;
+}
+
+img.icon{
+  max-width: 250px;
+  text-align: center;
+}
+​
 }
 
 
@@ -120,22 +132,7 @@ div.sources {
 *********************************************************************/
 @media(min-width: 780px) {
 
-    /*ADD HERE*/
-
-     .flex {
-        display: flex;
-        justify-content: space-around;
-    }
-.flex > div {
-    flex-basis: 33%;
 }
-
- 
-
-
-
-
-
 
 
 
